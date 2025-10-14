@@ -5,14 +5,14 @@ class Dia1Controller {
             [
                 "titulo" => "Inauguración de la Semana de Sistemas 2025",
                 "descripcion" => "Bienvenida con palabras de las autoridades académicas y el comité organizador.",
-                "imagen" => "/mvc/public/images/inauguracion.jpg",
-                "video" => "/mvc/public/images/inauguracion.mp4"
+                "imagen" => "/mvc/public/images/.jpg",
+                "video" => "/mvc/public/images/.mp4"
             ],
             [
-                "titulo" => "Taller: Introducción a la Ciberseguridad",
-                "descripcion" => "Primer taller técnico impartido por expertos invitados, donde se discutieron buenas prácticas de seguridad informática.",
-                "imagen" => "/mvc/public/images/ciberseguridad.jpg",
-                "video" => "/mvc/public/images/ciberseguridad.mp4"
+                "titulo" => "Primera Ponencia ",
+                "descripcion" => ".",
+                "imagen" => "/mvc/public/images/",
+                "video" => "/mvc/public/images/"
             ]
         ];
 
