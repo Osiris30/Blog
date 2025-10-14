@@ -1,7 +1,7 @@
 <?php
+// Cargar autoloader primero
+require_once __DIR__ . '/../autoloader.php';
 
-require_once("../autoloader.php");
-require_once("../routes/web.php");
-
-
+// Cargar rutas
+require_once __DIR__ . '/../routes/web.php';
 ?>

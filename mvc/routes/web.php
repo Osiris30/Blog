@@ -1,14 +1,19 @@
 <?php
+// Requerir controladores
+require_once __DIR__ . '/../app/controllers/HomeController.php';
+require_once __DIR__ . '/../app/controllers/Dia1Controller.php';
+require_once __DIR__ . '/../app/controllers/VisitasController.php';
 
-use app\controllers\HomeController;
+// Usar la clase Route
 use lib\Route;
 
-Route::get('/', 'HomeController@index');
-Route::get('/dia1', 'Dia1Controller@index');
+// Definir rutas
+Route::get('/', ['HomeController', 'index']);
+Route::get('/dia1', ['Dia1Controller', 'index']);
 
-Route::get('/visitas', 'VisitasController@index');
-Route::post('/visitas/guardar', 'VisitasController@guardar');
+Route::get('/visitas', ['VisitasController', 'index']);
+Route::post('/visitas/guardar', ['VisitasController', 'guardar']);
+
+// Despachar
 Route::dispatch();
 ?>
-
-
