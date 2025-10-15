@@ -27,7 +27,7 @@ class Dia1Controller {
             [
         "titulo" => "Segunda Ponencia - Inteligencia Artificial",
         "descripcion" => "Rodrigo Pineda.",
-        "imagenes" =>  ["/mvc/public/images/artificial1.jpg",
+        "imagenes" =>  [,
                         "/mvc/public/images/artificial2.jpg",
                         "/mvc/public/images/artificial3.jpg",
                         "/mvc/public/images/artificial4.jpg",
@@ -48,4 +48,4 @@ class Dia1Controller {
     }
 }
 
-?>
+?>"/mvc/public/images/artificial1.jpg"
