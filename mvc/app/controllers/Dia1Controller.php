@@ -5,18 +5,29 @@ class Dia1Controller {
             [
                 "titulo" => "Inauguración de la Semana de Sistemas 2025",
                 "descripcion" => "Bienvenida con palabras de las autoridades académicas y el comité organizador.",
-                "imagen" => "/mvc/public/images/.jpg",
-                "video" => "/mvc/public/images/.mp4"
+                "imagenes" => [],
+                "video" => "/mvc/public/images/bienvenida.mp4"
             ],
             [
-                "titulo" => "Primera Ponencia ",
-                "descripcion" => ".",
-                "imagen" => "/mvc/public/images/",
-                "video" => "/mvc/public/images/"
+                "titulo" => "Primera Ponencia - El ABC DEL BITCOIN",
+                "descripcion" => "Luis Contreras",
+                "imagenes" => [
+                    "/mvc/public/images/bitcoin.png",
+                    "/mvc/public/images/bitcoin1.jpg",
+                    "/mvc/public/images/bitcoin2.jpg",
+                    "/mvc/public/images/bitcoin3.jpg",
+                    "/mvc/public/images/bitcoin4.jpg",
+                    "/mvc/public/images/bitcoin5.jpg",
+                    "/mvc/public/images/bitcoin6.jpg",
+                    "/mvc/public/images/bitcoin7.jpg"
+                
+                ],
+                "video" => "" 
             ]
         ];
 
         require_once __DIR__ . '/../views/dia1.php';
     }
 }
+
 ?>
