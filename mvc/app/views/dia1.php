@@ -30,7 +30,7 @@
 
         <h2><?= htmlspecialchars($act["titulo"]) ?></h2>
 
-        <!-- Ponencia específica -->
+        
         <?php if ($act["titulo"] === "Primera Ponencia - El ABC DEL BITCOIN"): ?>
           <p>
             Luis Contreras nos presentó la ponencia <strong>“El ABC DEL BITCOIN”</strong>, donde abordó los siguientes temas:<br>
