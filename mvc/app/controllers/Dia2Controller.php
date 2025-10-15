@@ -16,7 +16,7 @@ class Dia2Controller {
             ]
         ];
 
-        require_once __DIR__ . '/../views/dia1.php';
+        require_once __DIR__ . '/../views/dia2.php';
     }
 }
 ?>

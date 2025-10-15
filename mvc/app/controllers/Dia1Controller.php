@@ -23,7 +23,25 @@ class Dia1Controller {
                 
                 ],
                 "video" => "" 
-            ]
+            ],
+            [
+        "titulo" => "Segunda Ponencia - Inteligencia Artificial",
+        "descripcion" => "Rodrigo Pineda.",
+        "imagenes" =>  ["/mvc/public/images/artificial1.jpg",
+                        "/mvc/public/images/artificial2.jpg",
+                        "/mvc/public/images/artificial3.jpg",
+                        "/mvc/public/images/artificial4.jpg",
+                        "/mvc/public/images/artificial5.jpg",
+                        "/mvc/public/images/artificial6.jpg",
+                        "/mvc/public/images/artificial7.jpg",
+                        "/mvc/public/images/artificial8.jpg",
+
+
+        ],
+        "video" => ""
+    ]
+
+            
         ];
 
         require_once __DIR__ . '/../views/dia1.php';

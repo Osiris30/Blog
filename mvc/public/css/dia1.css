@@ -1,11 +1,11 @@
-
+/* ==== RESET ==== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-
+/* ==== BASE ==== */
 body {
   font-family: "Segoe UI", Arial, sans-serif;
   background-color: #e0e9f6;
@@ -13,7 +13,7 @@ body {
   line-height: 1.6;
 }
 
-
+/* ==== HEADER ==== */
 header {
   background-color: #3e68a3;
   color: #ffffff;
@@ -25,6 +25,7 @@ header {
 }
 
 
+/* ==== NAV ==== */
 nav {
   background-color: #04080f;
   text-align: center;
@@ -52,38 +53,40 @@ nav a.active {
   padding-bottom: 3px;
 }
 
-
+/* ==== MAIN ==== */
 main {
   max-width: 900px;
-  margin: 40px 0;
+  margin: 40px auto;
   display: flex;
-  flex-direction: column;    
-  gap: 30px;                
-  padding-left: 20px;        
-  padding-right: 20px;
-  align-items: flex-start;   
+  flex-direction: column;
+  gap: 30px;
+  padding: 0 20px;
+  align-items: center;
+}
+.actividad.justify-text p {
+  text-align: justify;
 }
 
 
+/* ==== TARJETAS ==== */
 .actividad {
   display: flex;
-  flex-direction: column;    
-  align-items: center;       
+  flex-direction: column;
+  align-items: center;
   background-color: #ffffff;
   border-radius: 12px;
   padding: 20px;
   box-shadow: 0 4px 12px rgba(62, 104, 163, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 100%;               
-  max-width: 600px;          
-  text-align: center;        
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
 }
 
 .actividad:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 18px rgba(62, 104, 163, 0.25);
 }
-
 
 .actividad h2 {
   color: #3e68a3;
@@ -98,11 +101,10 @@ main {
   line-height: 1.5;
 }
 
-
-.actividad video,
-.actividad img {
-  width: 100%;
-  max-height: 250px;
+/* ==== VIDEO ==== */
+.actividad video {
+  width: 100%;           /* ocupa todo el ancho de la tarjeta */
+  max-height: 250px;     /* altura máxima */
   border-radius: 10px;
   object-fit: cover;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
@@ -110,56 +112,35 @@ main {
   transition: transform 0.3s ease;
 }
 
-.actividad video:hover,
+.actividad video:hover {
+  transform: scale(1.03);
+}
+
+/* ==== IMAGEN ==== */
+.actividad img {
+  width: auto;           /* no se estira al 100% */
+  max-width: 200px;      /* ancho máximo */
+  max-height: 150px;     /* altura máxima */
+  object-fit: contain;   /* mantiene proporción completa */
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  margin-bottom: 10px;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
 .actividad img:hover {
   transform: scale(1.03);
 }
 
-
-@media (max-width: 768px) {
-  main {
-    padding: 20px;
-  }
-
-  .actividad {
-    max-width: 100%;
-  }
-
-  .actividad video,
-  .actividad img {
-    max-width: 100%;
-    height: auto;
-  }
-}
-
-
-  nav a {
-    margin: 10px;
-    font-size: 15px;
-  }
-
-  main {
-    padding: 20px;
-    grid-template-columns: 1fr;
-  }
-
-  .actividad {
-    padding: 15px;
-  }
-
-  .actividad video {
-    height: auto;
-  }
-
-
+/* ==== COLLAGE DE IMÁGENES ==== */
 .actividad .imagenes-collage {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); 
-  gap: 10px; 
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 10px;
   width: 100%;
   margin-bottom: 10px;
 }
-
 
 .actividad .imagenes-collage img {
   width: 100%;
@@ -172,3 +153,38 @@ main {
 .actividad .imagenes-collage img:hover {
   transform: scale(1.05);
 }
+
+/* ==== RESPONSIVE ==== */
+@media (max-width: 768px) {
+  main {
+    padding: 20px;
+  }
+
+  .actividad {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .actividad img {
+    max-width: 150px;
+    max-height: 120px;
+  }
+
+  .actividad video {
+    max-height: 250px; /* mantiene tamaño original del video */
+  }
+}
+
+/* Centrar título del día */
+.titulo-dia1 {
+  text-align: center;
+  color: #04080f;
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+/* Justificar solo la ponencia del Bitcoin */
+.actividad.justify-text p {
+  text-align: justify;
+}
+
