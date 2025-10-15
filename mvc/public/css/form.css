@@ -1,0 +1,96 @@
+/* ======== Estilos generales ======== */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #eaf0f9;
+  color: #2c3e50;
+  margin: 0;
+  padding: 0;
+}
+
+/* ======== Header ======== */
+header {
+  background-color: #3e68a3;
+  color: #fff;
+  text-align: center;
+  padding: 25px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+/* ======== Contenedor principal ======== */
+.container {
+  max-width: 450px;
+  background-color: #fff;
+  margin: 50px auto;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* ======== Formularios ======== */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #34495e;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1.5px solid #c9d6e3;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s ease;
+  resize: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #3e68a3;
+  box-shadow: 0 0 5px rgba(62, 104, 163, 0.4);
+}
+
+/* ======== Botón ======== */
+button {
+  background-color: #3e68a3;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #2f5385;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+@media (max-width: 500px) {
+  .container {
+    margin: 30px 15px;
+    padding: 25px;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+}
