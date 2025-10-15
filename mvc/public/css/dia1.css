@@ -1,11 +1,10 @@
-/* ==== RESET ==== */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* ==== BASE ==== */
 body {
   font-family: "Segoe UI", Arial, sans-serif;
   background-color: #e0e9f6;
@@ -13,7 +12,7 @@ body {
   line-height: 1.6;
 }
 
-/* ==== HEADER ==== */
+
 header {
   background-color: #3e68a3;
   color: #ffffff;
@@ -25,7 +24,7 @@ header {
 }
 
 
-/* ==== NAV ==== */
+
 nav {
   background-color: #04080f;
   text-align: center;
@@ -53,7 +52,7 @@ nav a.active {
   padding-bottom: 3px;
 }
 
-/* ==== MAIN ==== */
+
 main {
   max-width: 900px;
   margin: 40px auto;
@@ -68,7 +67,7 @@ main {
 }
 
 
-/* ==== TARJETAS ==== */
+
 .actividad {
   display: flex;
   flex-direction: column;
@@ -101,10 +100,10 @@ main {
   line-height: 1.5;
 }
 
-/* ==== VIDEO ==== */
+
 .actividad video {
-  width: 100%;           /* ocupa todo el ancho de la tarjeta */
-  max-height: 250px;     /* altura máxima */
+  width: 100%;           
+  max-height: 250px;     
   border-radius: 10px;
   object-fit: cover;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
@@ -116,12 +115,12 @@ main {
   transform: scale(1.03);
 }
 
-/* ==== IMAGEN ==== */
+
 .actividad img {
-  width: auto;           /* no se estira al 100% */
-  max-width: 200px;      /* ancho máximo */
-  max-height: 150px;     /* altura máxima */
-  object-fit: contain;   /* mantiene proporción completa */
+  width: auto;           
+  max-width: 200px;      
+  max-height: 150px;     
+  object-fit: contain;   
   border-radius: 10px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
   margin-bottom: 10px;
@@ -133,7 +132,7 @@ main {
   transform: scale(1.03);
 }
 
-/* ==== COLLAGE DE IMÁGENES ==== */
+
 .actividad .imagenes-collage {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
@@ -154,7 +153,7 @@ main {
   transform: scale(1.05);
 }
 
-/* ==== RESPONSIVE ==== */
+
 @media (max-width: 768px) {
   main {
     padding: 20px;
@@ -171,11 +170,11 @@ main {
   }
 
   .actividad video {
-    max-height: 250px; /* mantiene tamaño original del video */
+    max-height: 250px; 
   }
 }
 
-/* Centrar título del día */
+
 .titulo-dia1 {
   text-align: center;
   color: #04080f;
@@ -183,7 +182,6 @@ main {
   margin-bottom: 45px;
 }
 
-/* Justificar solo la ponencia del Bitcoin */
 .actividad.justify-text p {
   text-align: justify;
 }
