@@ -7,7 +7,7 @@
 </head>
 <body>
   <header>
-    <h1>Semana de Sistema</h1>
+    <h1>Semana de Sistemas 2025</h1>
   </header>
 
   <nav>
@@ -26,12 +26,16 @@
         <h2><?= htmlspecialchars($act["titulo"]) ?></h2>
         <p><?= htmlspecialchars($act["descripcion"]) ?></p>
 
-        <!-- Imagen solo si existe -->
-        <?php if (!empty($act["imagen"])): ?>
-          <img src="<?= $act["imagen"] ?>" alt="<?= htmlspecialchars($act["titulo"]) ?>">
+        
+        <?php if (!empty($act["imagenes"])): ?>
+          <div class="galeria">
+            <?php foreach ($act["imagenes"] as $img): ?>
+              <img src="<?= $img ?>" alt="<?= htmlspecialchars($act["titulo"]) ?>">
+            <?php endforeach; ?>
+          </div>
         <?php endif; ?>
 
-        <!-- Video solo si existe -->
+        
         <?php if (!empty($act["video"])): ?>
           <video src="<?= $act["video"] ?>" controls></video>
         <?php endif; ?>

@@ -5,7 +5,7 @@ class Dia2Controller {
             [
                 "titulo" => "Taller #1 Toma de decisiones estratégicas basadas en datos",
                 "descripcion" => "Enrique Cortez.",
-                "imagen" => [
+                "imagenes" => [
                     "/mvc/public/images/decisiones.jpg",
                     "/mvc/public/images/decisiones1.jpg"
                 ],
@@ -14,7 +14,7 @@ class Dia2Controller {
             [
                 "titulo" => "Taller #2 Construyendo un CRUD en minutos",
                 "descripcion" => "Ing. Gabriel Castillo",
-                "imagen" => [
+                "imagenes" => [
                     "/mvc/public/images/crud1.jpg",
                     "/mvc/public/images/crud2.jpg",
                     "/mvc/public/images/crud3.jpg"
@@ -24,10 +24,10 @@ class Dia2Controller {
             [
                 "titulo" => "Taller #3 IA Multimodal - Creando el futuro visual e inteligente con n8n",
                 "descripcion" => "José Salmerón",
-                "imagen" => [
+                "imagenes" => [
                     "/mvc/public/images/multimodal.jpg",
                     "/mvc/public/images/multimodal1.jpg",
-                    "/mvc/public/images/multimodal2.jpg"
+                    "/mvc/public/images/multimodal3.jpg"
                 ],
                 "video" => ""
             ]

@@ -1,11 +1,11 @@
-/* ==== RESET ==== */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* ==== BASE ==== */
+
 body {
   font-family: "Segoe UI", Arial, sans-serif;
   background-color: #e0e9f6;
@@ -13,7 +13,6 @@ body {
   line-height: 1.6;
 }
 
-/* ==== HEADER ==== */
 header {
   background-color: #3e68a3;
   color: #ffffff;
@@ -24,7 +23,7 @@ header {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
-/* ==== NAV ==== */
+
 nav {
   background-color: #04080f;
   text-align: center;
@@ -52,14 +51,14 @@ nav a.active {
   padding-bottom: 3px;
 }
 
-/* ==== TÍTULO DEL DÍA ==== */
+
 .titulo-dia2 {
   text-align: center;
   color: #04080f;
-  margin: 40px 0;
+  margin: 40px 0 20px 0;
 }
 
-/* ==== MAIN ==== */
+
 main {
   max-width: 900px;
   margin: 0 auto 40px auto;
@@ -70,7 +69,7 @@ main {
   align-items: center;
 }
 
-/* ==== TARJETAS ==== */
+
 .actividad {
   display: flex;
   flex-direction: column;
@@ -81,7 +80,7 @@ main {
   box-shadow: 0 4px 12px rgba(62, 104, 163, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   width: 100%;
-  max-width: 600px;
+  max-width: 650px;
   text-align: center;
 }
 
@@ -101,27 +100,32 @@ main {
   font-size: 1em;
   margin-bottom: 15px;
   line-height: 1.5;
-  text-align: justify; /* Justifica el texto */
+  text-align: justify;
 }
 
-/* ==== IMÁGENES ==== */
-.actividad img {
-  width: auto;
-  max-width: 250px;
-  max-height: 200px;
-  object-fit: contain;
-  border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
   margin-bottom: 10px;
-  display: block;
+}
+
+.galeria img {
+  width: 180px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease;
 }
 
-.actividad img:hover {
-  transform: scale(1.03);
+.galeria img:hover {
+  transform: scale(1.05);
 }
 
-/* ==== VIDEO ==== */
+
 .actividad video {
   width: 100%;
   max-height: 250px;
@@ -136,7 +140,7 @@ main {
   transform: scale(1.03);
 }
 
-/* ==== RESPONSIVE ==== */
+
 @media (max-width: 768px) {
   main {
     padding: 20px;
@@ -147,12 +151,12 @@ main {
     padding: 15px;
   }
 
-  .actividad img {
-    max-width: 180px;
-    max-height: 150px;
+  .galeria img {
+    width: 140px;
+    height: 110px;
   }
 
   .actividad video {
-    max-height: 250px;
+    max-height: 220px;
   }
 }
