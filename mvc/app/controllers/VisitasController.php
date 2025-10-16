@@ -2,7 +2,11 @@
 require_once __DIR__ . '/../models/VisitasModel.php';
 
 class VisitasController {
+
     public function index() {
+        // Obtener visitas y pasar a la vista
+        $visitas = VisitasModel::obtenerVisitas();
+        $success = $_GET['success'] ?? 0;
         require_once __DIR__ . '/../views/form_visita.php';
     }
 
@@ -16,11 +20,11 @@ class VisitasController {
                 header("Location: /mvc/public/visitas?success=1");
                 exit;
             } else {
-                echo " Error al registrar la visita.";
+                echo "Error al registrar la visita.";
             }
         } else {
             echo "Método no permitido.";
         }
     }
 }
-?>
+
