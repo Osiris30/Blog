@@ -15,11 +15,11 @@
     <a href="/mvc/public">Inicio</a>
     <a href="/mvc/public/dia1" class="active">Día 1</a>
     <a href="/mvc/public/dia2">Día 2</a>
-    <a href="/mvc/public/info">Mi información</a>
+    <a href="/mvc/public/Miinformacion">Mi información</a>
     <a href="/mvc/public/visitas">Registrar visita</a>
   </nav>
 
-  <h2 class="titulo-dia1">Día 1 - Inauguración y Ponencias</h2>
+  <h2 class="titulo-dia1">Día 1 - Inauguración y Ponencias y Hackathon</h2>
 
   <main>
     <?php foreach ($actividades as $act): ?>
@@ -56,7 +56,7 @@
           <p><?= htmlspecialchars($act["descripcion"]) ?></p>
         <?php endif; ?>
 
-        <!-- Imágenes en collage -->
+        
         <?php if (!empty($act["imagenes"])): ?>
           <div class="imagenes-collage">
             <?php foreach ($act["imagenes"] as $img): ?>
@@ -65,7 +65,7 @@
           </div>
         <?php endif; ?>
 
-        <!-- Video -->
+   
         <?php if (!empty($act["video"])): ?>
           <video src="<?= $act["video"] ?>" controls></video>
         <?php endif; ?>

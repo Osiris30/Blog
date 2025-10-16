@@ -1,0 +1,150 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #e0e9f6;
+  color: #04080f;
+  line-height: 1.6;
+}
+
+
+header {
+  background-color: #3e68a3;
+  color: #ffffff;
+  text-align: center;
+  padding: 25px;
+  font-size: 1.8em;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+
+nav {
+  background-color: #04080f;
+  text-align: center;
+  padding: 12px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  color: #ffffff;
+  margin: 0 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s, transform 0.2s;
+}
+
+nav a:hover {
+  color: #a1c6ea;
+  transform: scale(1.1);
+}
+
+nav a.active {
+  color: #a1c6ea;
+  border-bottom: 2px solid #a1c6ea;
+  padding-bottom: 3px;
+}
+
+
+.titulo {
+  text-align: center;
+  color: #04080f;
+  margin: 40px 0 20px 0;
+  font-size: 1.6em;
+}
+
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px 50px;
+  margin-top: 40px; 
+}
+
+
+
+.info-card {
+
+  display: flex;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(62, 104, 163, 0.25);
+  max-width: 850px;
+  width: 100%;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 15px rgba(62, 104, 163, 0.35);
+}
+
+
+.foto {
+  flex: 1;
+  background-color: #eef3ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-width: 300px;
+  border-radius: 15px 0 0 15px;
+  transition: transform 0.3s ease;
+}
+
+.foto img:hover {
+  transform: scale(1.05);
+}
+
+
+.detalles {
+  flex: 2;
+  padding: 30px;
+}
+
+.detalles h2 {
+  color: #3e68a3;
+  margin-bottom: 10px;
+}
+
+.detalles p {
+  margin: 8px 0;
+  color: #333;
+}
+
+.descripcion {
+  margin-top: 15px;
+  font-style: italic;
+  color: #555;
+}
+
+
+@media (max-width: 768px) {
+  .info-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .foto img {
+    max-width: 100%;
+    border-radius: 15px 15px 0 0;
+  }
+
+  .detalles {
+    padding: 20px;
+  }
+}

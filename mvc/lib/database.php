@@ -1,21 +1,29 @@
 <?php
-class Database {
-    private static $host = "localhost";
-    private static $db_name = "db_semanasistemas";
-    private static $username = "root";
-    private static $password = "";
-    public static $conn;
+namespace lib;
+use PDO;
+use PDOException;
 
-    public static function connect() {
-        if (!self::$conn) {
-            try {
-                self::$conn = new PDO("mysql:host=".self::$host.";dbname=".self::$db_name, self::$username, self::$password);
-                self::$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            } catch (PDOException $e) {
-                echo "Error de conexión: " . $e->getMessage();
-            }
+class Database {
+    private $host = "db"; 
+    private $db_name = "db_semanasistemas";
+    private $username = "root";
+    private $password = "rootpass";
+    public $conn;
+
+    public function getConnection() {
+        $this->conn = null;
+        try {
+            $this->conn = new PDO(
+                "mysql:host={$this->host};dbname={$this->db_name}",
+                $this->username,
+                $this->password
+            );
+            $this->conn->exec("SET NAMES utf8");
+            $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        } catch (PDOException $exception) {
+            echo "Error de conexión: " . $exception->getMessage();
         }
-        return self::$conn;
+        return $this->conn;
     }
 }
 ?>

@@ -13,10 +13,13 @@ class VisitasController {
             $comentario = $_POST['comentario'] ?? '';
 
             if (VisitasModel::guardarVisita($nombre, $email, $comentario)) {
-                header("Location: /mvc/public?success=1");
+                header("Location: /mvc/public/visitas?success=1");
+                exit;
             } else {
-                echo " Error al registrar visita.";
+                echo " Error al registrar la visita.";
             }
+        } else {
+            echo "Método no permitido.";
         }
     }
 }

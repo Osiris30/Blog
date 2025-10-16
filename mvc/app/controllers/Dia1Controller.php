@@ -15,11 +15,12 @@ class Dia1Controller {
                     "/mvc/public/images/bitcoin.png",
                     "/mvc/public/images/bitcoin1.jpg",
                     "/mvc/public/images/bitcoin2.jpg",
-                    "/mvc/public/images/bitcoin3.jpg",
+                    "/mvc/public/images/bitcoin1.jpg",
                     "/mvc/public/images/bitcoin4.jpg",
                     "/mvc/public/images/bitcoin5.jpg",
                     "/mvc/public/images/bitcoin6.jpg",
-                    "/mvc/public/images/bitcoin7.jpg"
+                    "/mvc/public/images/bitcoin7.jpg",
+
                 ],
                 "video" => ""
             ],
@@ -27,6 +28,7 @@ class Dia1Controller {
                 "titulo" => "Segunda Ponencia - Inteligencia Artificial",
                 "descripcion" => "Rodrigo Pineda.",
                 "imagenes" => [
+                    "/mvc/public/images/artificial1.jpg",
                     "/mvc/public/images/artificial2.jpg",
                     "/mvc/public/images/artificial3.jpg",
                     "/mvc/public/images/artificial4.jpg",

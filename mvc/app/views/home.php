@@ -14,7 +14,7 @@
     <a href="/mvc/public">Inicio</a>
     <a href="/mvc/public/dia1">Día 1</a>
     <a href="/mvc/public/dia2">Día 2</a>
-    <a href="/mvc/public/info">Mi información</a>
+    <a href="/mvc/public/Miinformacion">Mi información</a>
     <a href="/mvc/public/visitas">Registrar visita</a>
   </nav>
 
@@ -31,7 +31,7 @@
       </p>
     </section>
 
-    <!-- 🔹 Slider principal -->
+    <!-- Slider  -->
     <div class="slider-container">
       <button class="prev">&#10094;</button>
       <div class="slider" id="slider">
@@ -42,11 +42,12 @@
         <div class="card"><img src="/mvc/public/images/quintafoto.jpg" alt="Semana de Sistemas"></div>
         <div class="card"><img src="/mvc/public/images/sextafoto.jpg" alt="Semana de Sistemas"></div>
         <div class="card"><img src="/mvc/public/images/septima.jpg" alt="Semana de Sistemas"></div>
+        <div class="card"><img src="/mvc/public/images/dia1.jpg" alt="Semana de Sistemas"></div>
       </div>
       <button class="next">&#10095;</button>
     </div>
 
-    <!-- 🔹 Tarjetas horizontales de los días -->
+    
     <section class="dias-section">
       <h2>Explora los Días del Evento</h2>
       <div class="dias-container">
