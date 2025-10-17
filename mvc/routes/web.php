@@ -19,7 +19,7 @@ Route::get('/dia4', ['Dia4Controller', 'index']);
 Route::get('/dia5', ['Dia5Controller', 'index']);
 Route::get('/Miinformacion', ['MiinformacionController', 'index']);
 Route::get('/visitas', ['VisitasController', 'index']);
-Route::post('/visitas/guardar', ['VisitasController',  'index']);
+Route::post('/visitas/guardar', ['VisitasController',  'guardar']);
 
 Route::dispatch();
 ?>
