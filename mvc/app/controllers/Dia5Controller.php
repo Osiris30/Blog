@@ -4,44 +4,68 @@ class Dia5Controller {
         $actividades = [
             [
                 "titulo" => "Bingo.",
-                "descripcion" => "Este día el evento fue realizado en el Auditorio 1 y se contó con la asistencia de muchos estudiantes que participaron en dicho juego.",
+                "descripcion" => "Este día el evento fue realizado en el Auditorio 1 y se contó con la asistencia de muchos estudiantes que participaron en dicho juego.
+                -Primero escaneamos el codigo QR.
+                -Registrarse.
+                -Iniciar Sesión.
+                -Comprar credito.
+                -Comprar cartones .
+                -Ingresar a la sala",
                 "imagenes" => [
-                    "/mvc/public/images/jueves1.jpg",
-                     
-                      "/mvc/public/images/jueves16.jpg",
-                       "/mvc/public/images/jueves17.jpg",
+                    "/mvc/public/images/viernesbingo.jpg",
+
+                    "/mvc/public/images/bingo.jpg",
+                      "/mvc/public/images/bingo1.jpg",
+                      
+                       
+                       
 
                 ],
                 "video" => ""
             ],
             [
-                "titulo" => "Entrega de Premios",
-                "descripcion" => "Se le entregó en el reconocimiento a los ganadores, de feria de logros y comelona de pupusas",
+                "titulo" => "Primer Ganador",
+                "descripcion" => "El ganador fue: Kevin Natanael 
+                El premio fue: una camisa, gorra, llavero, un set de uñas en acrilico.",
                 "imagenes" => [
-                    "/mvc/public/images/jueves2.jpg",
-                    "/mvc/public/images/jueves3.jpg",
-                    "/mvc/public/images/jueves4.jpg",
-                    "/mvc/public/images/jueves5.jpg",
-                    "/mvc/public/images/jueves6.jpg",
-                    "/mvc/public/images/jueves7.jpg",
-                    "/mvc/public/images/jueves8.jpg",
-                    "/mvc/public/images/jueves9.jpg",
-                    "/mvc/public/images/jueves10.jpg",
-                    "/mvc/public/images/jueves11.jpg",
-                    "/mvc/public/images/jueves12.jpg",
-                    "/mvc/public/images/jueves13.jpg",
+                    
+                ],
+                "video" => "/mvc/public/images/primerganador.mp4"
+            ],
+            [
+                "titulo" => "Segunda Ganadora",
+                "descripcion" => "La ganadora fue: Angelica Amaya
+                Premio Audifonos Redmi Buds 6 play.",
+                "video" => "/mvc/public/images/segundaganadora.mp4",
+                "imagenes" => [
+                      
+                ],
+
+                
+            ],
+            [
+                "titulo" => "Tercera Ganadora",
+                "descripcion" => "La ganadora fue: Ing. Vanessa Marquez
+                El premio fue una bocina.",
+                "video" => "/mvc/public/images/terceraganadora.mp4",
+                "imagenes" => [
+                      
+                ],
+                
+                
+            ],
+            [
+                "titulo" => "Cuarta Ganadora",
+                "descripcion" => "Nuevamente la ganadora fue: Ing. Vanessa Marquez
+                El premio fue: una gorra, camisa y un set de uñas en gel",
+                "imagenes" => [
+                    "/mvc/public/images/cuartaganadora.jpg",
+                    
                 ],
                 "video" => ""
             ],
-            [
-                "titulo" => "Torneo de videojuego",
-                "descripcion" => "Grupo ganador por voto popular, bloc de teoria de sistemas.",
-                "video" => "/mvc/public/images/ganadorespopularidad.mp4",
-                "imagenes" => [
-                    "/mvc/public/images/jueves12.jpg",   
-                ],
-                
-            ],
+           
+            
             
             
         ];

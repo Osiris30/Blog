@@ -22,7 +22,7 @@
     <a href="/mvc/public/visitas">Registrar visita</a>
   </nav>
 
-  <h2 class="titulo-dia4">Día 4 - Feria de logros y Comelona de Pupusas.</h2>
+  <h2 class="titulo-dia4">Día 5 - Bingo, Entrega de reconocimientos, Torneo de Videojuegos.</h2>
 
   <main>
     <?php foreach ($actividades as $act): ?>
