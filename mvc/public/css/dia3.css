@@ -104,7 +104,7 @@ main {
   text-align: justify;
 }
 
-/* ===== Galería ===== */
+
 .galeria {
   display: flex;
   flex-wrap: wrap;
@@ -144,7 +144,7 @@ main {
 
 
 footer {
-  background-color: #3e68a3;
+  background-color: #04080f;
   color: #ffffff;
   text-align: center;
   padding: 15px 0;

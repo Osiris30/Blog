@@ -56,12 +56,15 @@ El premio fue: una gorra, camisa y un set de uñas en gel",
 - Mostrar un lápicero azul.
 - Llevar un zapato de color negro.
 - Llegar al frente con un ingeniero.
-El premio fue: una gorra, camisa y un set de uñas en gel",
+",
                 "imagenes" => [
                     "/mvc/public/images/dinamica.jpg",
                     "/mvc/public/images/dinamica1.jpg",
                     "/mvc/public/images/dinamica2.jpg",
                     "/mvc/public/images/dinamica3.jpg",
+                    "/mvc/public/images/dinamica5.jpg",
+                    "/mvc/public/images/dinamica6.jpg",
+
                 ],
                 "video" => ""
             ],
@@ -95,6 +98,14 @@ El premio fue: Una bocina.",
             [
                 "titulo" => "Entrega de Reconocimientos",
                 "descripcion" => "Se le entregarón diplomas a los ganadores de feria de logros 2025.",
+                "imagenes" => [
+                    "/mvc/public/images/reconocimiento.jpg",
+                ],
+                "video" => ""
+            ],
+             [
+                "titulo" => "Torneo de Videojuegos",
+                "descripcion" => "Este torneo se llevó a cabo en el Computo A y consisitía en batallas de Clash Royale.",
                 "imagenes" => [
                     "/mvc/public/images/reconocimiento.jpg",
                 ],

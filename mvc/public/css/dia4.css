@@ -1,11 +1,11 @@
-/* ===== Reset ===== */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* ===== Body ===== */
+
 body {
   font-family: "Segoe UI", Arial, sans-serif;
   background: linear-gradient(to bottom, #e0e9f6, #d5e3f5);
@@ -13,7 +13,7 @@ body {
   line-height: 1.6;
 }
 
-/* ===== Header ===== */
+
 header {
   background-color: #3e68a3;
   color: #ffffff;
@@ -25,7 +25,7 @@ header {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
-/* ===== Navigation ===== */
+
 nav {
   background-color: #04080f;
   display: flex;
@@ -57,7 +57,7 @@ nav a.active {
   padding-bottom: 3px;
 }
 
-/* ===== Título del día ===== */
+
 .titulo-dia4 {
   text-align: center;
   margin: 20px 0;
@@ -66,10 +66,10 @@ nav a.active {
   font-weight: 600;
 }
 
-/* ===== Main / Actividades ===== */
+
 main {
   width: 100%;
-  max-width: 650px; /* igual que el segundo CSS */
+  max-width: 650px;
   margin: 0 auto 50px;
   display: flex;
   flex-direction: column;
@@ -111,7 +111,6 @@ main {
   text-align: justify;
 }
 
-/* ===== Galería de imágenes ===== */
 .galeria {
   display: flex;
   flex-wrap: wrap;
@@ -134,7 +133,6 @@ main {
   box-shadow: 0 5px 12px rgba(0,0,0,0.25);
 }
 
-/* ===== Video ===== */
 .actividad video {
   width: 100%;
   max-height: 250px;
@@ -149,17 +147,15 @@ main {
   transform: scale(1.03);
 }
 
-/* ===== Footer ===== */
-footer {
-  background-color: #3e68a3;
-  color: #ffffff;
-  text-align: center;
-  padding: 15px 0;
-  font-size: 0.9rem;
-  box-shadow: 0 -3px 10px rgba(0,0,0,0.2);
+footer { 
+  background-color: #04080f; 
+  color: #ffffff; 
+  text-align: center; 
+  padding: 15px; 
+  margin-top: 40px; 
+  font-size: 14px; 
 }
 
-/* ===== Responsive ===== */
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
