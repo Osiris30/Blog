@@ -47,7 +47,14 @@
         <div class="card"><img src="/mvc/public/images/quintafoto.jpg" alt="Semana de Sistemas"></div>
         <div class="card"><img src="/mvc/public/images/sextafoto.jpg" alt="Semana de Sistemas"></div>
         <div class="card"><img src="/mvc/public/images/septima.jpg" alt="Semana de Sistemas"></div>
-        <div class="card"><img src="/mvc/public/images/dia1.jpg" alt="Semana de Sistemas"></div>
+        <div class="card"><img src="/mvc/public/images/foto1.jpg" alt="Semana de Sistemas"></div>
+         <div class="card"><img src="/mvc/public/images/foto2.jpg" alt="Semana de Sistemas"></div>
+          <div class="card"><img src="/mvc/public/images/foto3.jpg" alt="Semana de Sistemas"></div>
+           <div class="card"><img src="/mvc/public/images/foto4.jpg" alt="Semana de Sistemas"></div>
+            <div class="card"><img src="/mvc/public/images/foto5.jpg" alt="Semana de Sistemas"></div>
+             
+            <div class="card"><img src="/mvc/public/images/foto6.jpg" alt="Semana de Sistemas"></div>
+             
       </div>
       <button class="next">&#10095;</button>
     </div>
