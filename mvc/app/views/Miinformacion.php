@@ -12,7 +12,10 @@
   <nav>
     <a href="/mvc/public">Inicio</a>
     <a href="/mvc/public/dia1">Día 1</a>
-    <a href="/mvc/public/dia2" class="active">Día 2</a>
+    <a href="/mvc/public/dia2">Día 2</a>
+    <a href="/mvc/public/dia3">Día 3</a>
+    <a href="/mvc/public/dia4">Día 4</a>
+    <a href="/mvc/public/dia5">Día 5</a>
     <a href="/mvc/public/Miinformacion">Mi información</a>
     <a href="/mvc/public/visitas">Registrar visita</a>
   </nav>

@@ -1,261 +1,242 @@
-/*  Reset  */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Segoe UI", Arial, sans-serif;
-  color: #04080f;
-  background-color: #e0e9f6;
-  line-height: 1.6;
-}
-
-/*  Header */
-header {
-  background-color: #3e68a3;
-  color: #ffffff;
-  padding: 25px;
-  text-align: center;
-  font-size: 1.8em;
-  letter-spacing: 1px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+* { 
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0; 
 }
 
 
-nav {
-  background-color: #04080f;
-  text-align: center;
-  padding: 12px 0;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-nav a {
-  color: #ffffff;
-  margin: 0 20px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 16px;
-  transition: color 0.3s, transform 0.2s;
-}
-
-nav a:hover {
-  color: #a1c6ea;
-  transform: scale(1.1);
+body { 
+  font-family: "Segoe UI", Arial, sans-serif; 
+  color: #04080f; 
+  background-color: #e0e9f6; 
+  line-height: 1.6; 
 }
 
 
-.titulo {
-  text-align: center;
-  color: #04080f;
-  margin-top: 30px;
-  font-size: 28px;
-  font-weight: 700;
+header { 
+  background-color: #3e68a3; 
+  color: #ffffff; 
+  padding: 25px; 
+  text-align: center; 
+  font-size: 1.8em; 
+  letter-spacing: 1px; 
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25); 
+}
+
+nav { 
+  background-color: #04080f; 
+  text-align: center; 
+  padding: 12px 0; 
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1); 
+}
+nav a { 
+  color: #ffffff; 
+  margin: 0 20px; 
+  text-decoration: none; 
+  font-weight: bold; 
+  font-size: 16px; 
+  transition: color 0.3s, transform 0.2s; 
+}
+nav a:hover { 
+  color: #a1c6ea; 
+  transform: scale(1.1); 
 }
 
 
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 40px 20px;
+.titulo { 
+  text-align: center; 
+  color: #04080f; 
+  margin-top: 30px; 
+  font-size: 28px; 
+  font-weight: 700; 
 }
 
-.intro {
-  max-width: 800px;
-  text-align: center;
-  margin-bottom: 40px;
-  background-color: #ffffff;
-  padding: 25px 35px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(62, 104, 163, 0.2);
+
+main { 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  padding: 40px 20px; 
 }
 
-.intro h3 {
-  color: #3e68a3;
-  margin-bottom: 15px;
-  font-size: 22px;
+.intro { 
+  max-width: 800px; 
+  text-align: center; 
+  margin-bottom: 40px; 
+  background-color: #ffffff; 
+  padding: 25px 35px; 
+  border-radius: 12px; 
+  box-shadow: 0 4px 12px rgba(62,104,163,0.2); 
+}
+.intro h3 { 
+  color: #3e68a3; 
+  margin-bottom: 15px; 
+  font-size: 22px; 
 }
 
-/* Slider  */
-.slider-container {
-  position: relative;
-  width: 90%;
-  max-width: 1000px;
-  overflow: hidden;
-  margin-top: 10px;
+.slider-container { 
+  position: relative; 
+  width: 90%; 
+  max-width: 1000px; 
+  overflow: hidden; 
+  margin-top: 10px; 
+}
+.slider { 
+  display: flex; 
+  gap: 25px; 
+  overflow-x: auto; 
+  scroll-behavior: smooth; 
+  scroll-snap-type: x mandatory; 
+  padding: 10px; 
+}
+.slider::-webkit-scrollbar { 
+  display: none; 
+}
+.card { 
+  flex: 0 0 300px; 
+  height: 200px; 
+  background-color: #fff; 
+  border-radius: 12px; 
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15); 
+  overflow: hidden; 
+  scroll-snap-align: start; 
+  transition: transform 0.3s ease; 
+}
+.card:hover { 
+  transform: scale(1.05); 
+}
+.card img { 
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
 }
 
-.slider {
-  display: flex;
-  gap: 25px;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  scroll-snap-type: x mandatory;
-  padding: 10px;
-}
 
-.slider::-webkit-scrollbar {
-  display: none;
+.prev, .next { 
+  position: absolute; 
+  top: 50%; 
+  transform: translateY(-50%); 
+  background-color: rgba(62,104,163,0.8); 
+  color: white; 
+  border: none; 
+  padding: 10px; 
+  cursor: pointer; 
+  font-size: 22px; 
+  border-radius: 50%; 
+  transition: background 0.3s; 
+  z-index: 2; 
 }
-
-/* Tarjetas  */
-.card {
-  flex: 0 0 300px;
-  height: 200px;
-  background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  overflow: hidden;
-  scroll-snap-align: start;
-  transition: transform 0.3s ease;
+.prev:hover, .next:hover { 
+  background-color: #a1c6ea; 
+  color: #04080f; 
 }
-
-.card:hover {
-  transform: scale(1.05);
-}
-
-.card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/*  Flechas */
-.prev, .next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(62, 104, 163, 0.8);
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  font-size: 22px;
-  border-radius: 50%;
-  transition: background 0.3s;
-  z-index: 2;
-}
-
-.prev:hover, .next:hover {
-  background-color: #a1c6ea;
-  color: #04080f;
-}
-
-.prev { left: 10px; }
+.prev { left: 10px; } 
 .next { right: 10px; }
 
-/*  Footer  */
-footer {
-  background-color: #04080f;
-  color: #ffffff;
-  text-align: center;
-  padding: 15px;
-  margin-top: 40px;
-  font-size: 14px;
-}
 
-/*  Responsive */
-@media (max-width: 768px) {
-  .card {
-    flex: 0 0 250px;
-    height: 160px;
-  }
-
-  .intro {
-    margin: 20px;
-    padding: 20px;
-  }
-
-  nav a {
-    display: inline-block;
-    margin: 8px;
-  }
-}
-/*  Sección de los días  */
-.dias-section {
-  text-align: center;
-  margin: 60px auto;
-  padding: 20px;
-  max-width: 1200px;
-}
-
-.dias-section h2 {
-  font-size: 2em;
-  color: #222;
-  margin-bottom: 30px;
+footer { 
+  background-color: #04080f; 
+  color: #ffffff; 
+  text-align: center; 
+  padding: 15px; 
+  margin-top: 40px; 
+  font-size: 14px; 
 }
 
 
-.dias-container {
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  padding: 10px 0;
-  scroll-snap-type: x mandatory;
+.dias-section { 
+  text-align: center; 
+  margin: 60px auto; 
+  padding: 20px 0; 
+  max-width: 1200px; 
 }
 
-.dia-card {
-  flex: 0 0 320px;
-  background: #fff;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  overflow: hidden;
-  scroll-snap-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
+.dias-section h2 { 
+  font-size: 2em; 
+  color: #222; 
+  margin-bottom: 30px; 
 }
 
-.dia-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
-}
-
-.dia-card img {
-  width: 100%;
-  height: 330px;
-  object-fit: cover;
-}
-
-.dia-card h3 {
-  margin: 15px 0 10px;
-  color: #1e3d58;
-  font-size: 1.1em;
-  padding: 0 10px;
-}
-
-.dia-card p {
-  padding: 0 15px;
-  color: #555;
-  font-size: 0.9em;
-  margin-bottom: 15px;
-}
-
-.dia-card .btn {
-  display: inline-block;
-  margin-bottom: 20px;
-  padding: 10px 20px;
-  background: #1e88e5;
-  color: white;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background 0.3s;
-}
-
-.dia-card .btn:hover {
-  background: #0d47a1;
+/* Contenedor de tarjetas */
+.dias-container { 
+  display: flex; 
+  gap: 25px; 
+  flex-wrap: nowrap; 
+  overflow-x: auto; 
+  padding: 10px 0; 
+  scroll-snap-type: x mandatory; 
 }
 
 
-.dias-container::-webkit-scrollbar {
-  height: 8px;
+.dia-card:first-child {
+  margin-left: 10px; 
 }
 
-.dias-container::-webkit-scrollbar-thumb {
-  background-color: #1e88e5;
-  border-radius: 4px;
+
+.dia-card { 
+  flex: 0 0 320px; 
+  background: #fff; 
+  border-radius: 15px; 
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+  overflow: hidden; 
+  scroll-snap-align: start; 
+  transition: transform 0.3s, box-shadow 0.3s; 
 }
 
+.dia-card:hover { 
+  transform: translateY(-8px); 
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15); 
+}
+
+.dia-card img { 
+  width: 100%; 
+  height: 330px; 
+  object-fit: cover; 
+}
+
+.dia-card h3 { 
+  margin: 15px 0 10px; 
+  color: #1e3d58; 
+  font-size: 1.1em; 
+  padding: 0 10px; 
+}
+
+.dia-card p { 
+  padding: 0 15px; 
+  color: #555; 
+  font-size: 0.9em; 
+  margin-bottom: 15px; 
+}
+
+.dia-card .btn { 
+  display: inline-block; 
+  margin-bottom: 20px; 
+  padding: 10px 20px; 
+  background: #1e88e5; 
+  color: white; 
+  border-radius: 8px; 
+  text-decoration: none; 
+  font-weight: bold; 
+  transition: background 0.3s; 
+}
+
+.dia-card .btn:hover { 
+  background: #0d47a1; 
+}
+
+
+.dias-container::-webkit-scrollbar { 
+  height: 20px; 
+}
+.dias-container::-webkit-scrollbar-thumb { 
+  background-color: #1e88e5; 
+  border-radius: 4px; 
+}
+
+
+@media (max-width: 768px) { 
+  .dia-card { 
+    flex: 0 0 250px; 
+    height: auto; 
+  } 
+}

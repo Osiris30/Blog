@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <title>Registrar visita</title>
   <link rel="stylesheet" href="/mvc/public/css/form_visita.css">
+  <link rel="stylesheet" href="/mvc/public/css/style.css">
+
   
 <body>
   <header>
@@ -14,14 +16,17 @@
     <a href="/mvc/public">Inicio</a>
     <a href="/mvc/public/dia1">Día 1</a>
     <a href="/mvc/public/dia2">Día 2</a>
-    <a href="/mvc/public/MiInformacion">Mi información</a>
-    <a href="/mvc/public/visitas" class="active">Registrar visita</a>
+    <a href="/mvc/public/dia3">Día 3</a>
+    <a href="/mvc/public/dia4">Día 4</a>
+    <a href="/mvc/public/dia5">Día 5</a>
+    <a href="/mvc/public/Miinformacion">Mi información</a>
+    <a href="/mvc/public/visitas">Registrar visita</a>
   </nav>
 
   <main class="container">
-    <?php if ($success): ?>
-      <p class="success"></p>
-    <?php endif; ?>
+    <?php if (!empty($success)): ?>
+  <p class="success">¡Visita registrada exitosamente!</p>
+<?php endif; ?>
 
     <form method="POST" action="/mvc/public/visitas/guardar">
       <label>Nombre:</label>
