@@ -50,5 +50,8 @@
       </section>
     <?php endforeach; ?>
   </main>
+  <footer>
+    <p>© 2025 Semana de Sistemas. Todos los derechos reservados.</p>
+  </footer>
 </body>
 </html>

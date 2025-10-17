@@ -87,7 +87,7 @@
 
     <div class="dia-card">
       <img src="/mvc/public/images/viernes.jpg" alt="Día 5">
-      <h3>Día 5 - Bingo, Reconocimientos y Torneo de Videojuegos.</h3>
+      <h3>Día 5 - Bingo, Entrega de Reconocimientos y Torneo de Videojuegos.</h3>
       <p>Este día se jugó Bingo, además se entregaron los reconocimientos a los respectivos ganadores, también hubo torneo de videojuegos y la fiesta.</p>
       <a href="/mvc/public/dia5" class="btn">Ver Día 5</a>
     </div>

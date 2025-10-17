@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Día 2 - Semana de Sistemas 2025</title>
   <link rel="stylesheet" href="/mvc/public/css/dia2.css">
+  <link rel="stylesheet" href="/mvc/public/css/style.css">
 </head>
 <body>
   <header>
@@ -66,5 +67,8 @@
       </section>
     <?php endforeach; ?>
   </main>
+  <footer>
+    <p>© 2025 Semana de Sistemas. Todos los derechos reservados.</p>
+  </footer>
 </body>
 </html>

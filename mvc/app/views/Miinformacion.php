@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Mi Información</title>
   <link rel="stylesheet" href="/mvc/public/css/Miinformacion.css">
+  <link rel="stylesheet" href="/mvc/public/css/style.css">
 </head>
 <body>
   <header>
@@ -34,5 +35,8 @@
       </div>
     </div>
   </main>
+  <footer>
+    <p>© 2025 Semana de Sistemas. Todos los derechos reservados.</p>
+  </footer>
 </body>
 </html>
