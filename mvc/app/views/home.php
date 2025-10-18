@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Inicio - Semana de Sistemas 2025</title>
   <link rel="stylesheet" href="/mvc/public/css/style.css">
-  <link rel="stylesheet" href="/mvc/public/css/dia4.css">
+  
 </head>
 <body>
 
