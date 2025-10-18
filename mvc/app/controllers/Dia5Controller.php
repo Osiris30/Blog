@@ -107,10 +107,41 @@ El premio fue: Una bocina.",
                 "titulo" => "Torneo de Videojuegos",
                 "descripcion" => "Este torneo se llevó a cabo en el Computo A y consisitía en batallas de Clash Royale.",
                 "imagenes" => [
-                    "/mvc/public/images/reconocimiento.jpg",
+                    "/mvc/public/images/torneovideojuego.jpg",
+                    "/mvc/public/images/videojuego1.jpg",
+                    "/mvc/public/images/videojuego2.jpg",
+                    "/mvc/public/images/videojuego3.jpg",
+                     "/mvc/public/images/videojuegos4.jpg",
+                      "/mvc/public/images/videjuego5.jpg",
+
+
                 ],
                 "video" => ""
             ],
+            [
+                "titulo" => "Y así se dió por finalizada la Semana de Sistemas 2025.",
+                "descripcion" => "La Semana de Sistemas es un evento de gran relevancia para los estudiantes de Ingeniería en Sistemas, donde se desarrollaron ponencias inspiradoras, se presentan proyectos innovadores y se promueven espacios de convivencia y diversión. A lo largo de las actividades, se demuestra por qué esta carrera es tan fascinante, dinámica e importante en el mundo actual..",
+                "imagenes" => [
+                    "/mvc/public/images/primerafoto.jpg",
+                    "/mvc/public/images/cuartafoto.jpg",
+                    "/mvc/public/images/videojuego2.jpg",
+                    "/mvc/public/images/ganadores1.jpg",
+                     "/mvc/public/images/foto3.jpg",
+                      "/mvc/public/images/foto5.jpg",
+                       "/mvc/public/images/bingo3.jpg",
+                        "/mvc/public/images/reconocimiento.jpg",
+                         "/mvc/public/images/jueves8.jpg",
+                          "/mvc/public/images/foto7.jpg",
+                          "/mvc/public/images/jueves1.jpg",
+                          "/mvc/public/images/jueves6.jpg",
+                          
+
+
+                ],
+                "video" => ""
+            ],
+            
+
             
         ];
 
