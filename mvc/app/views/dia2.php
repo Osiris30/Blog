@@ -5,6 +5,7 @@
   <title>Día 2 - Semana de Sistemas 2025</title>
   <link rel="stylesheet" href="/mvc/public/css/dia2.css">
   <link rel="stylesheet" href="/mvc/public/css/style.css">
+  <link rel="stylesheet" href="/mvc/public/css/dia4.css">
 </head>
 <body>
   <header>

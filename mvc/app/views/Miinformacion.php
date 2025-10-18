@@ -5,6 +5,7 @@
   <title>Mi Información</title>
   <link rel="stylesheet" href="/mvc/public/css/Miinformacion.css">
   <link rel="stylesheet" href="/mvc/public/css/style.css">
+  <link rel="stylesheet" href="/mvc/public/css/dia4.css">
 </head>
 <body>
   <header>

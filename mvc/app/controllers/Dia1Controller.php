@@ -38,7 +38,24 @@ class Dia1Controller {
                     "/mvc/public/images/artificial8.jpg"
                 ],
                 "video" => ""
-            ]
+            ],
+            [
+                "titulo" => "Hackaton",
+                "descripcion" => "En el Hackaton participaron 5 equipos. ",
+                
+                "imagenes" => [
+                    "/mvc/public/images/hackaton1.jpg",
+                   
+                    "/mvc/public/images/hackaton3.jpg",
+                    "/mvc/public/images/hackaton4.jpg",
+                    
+                    "/mvc/public/images/hackaton7.jpg",
+                    
+                ],
+                "video" => ""
+            ],
+            
+
         ];
 
         require_once __DIR__ . '/../views/dia1.php';

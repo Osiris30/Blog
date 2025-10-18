@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -6,6 +5,7 @@
   <title>Día 1 - Semana de Sistemas 2025</title>
   <link rel="stylesheet" href="/mvc/public/css/dia1.css">
   <link rel="stylesheet" href="/mvc/public/css/style.css">
+  <link rel="stylesheet" href="/mvc/public/css/dia4.css">
 
 </head>
 <body>
@@ -15,7 +15,7 @@
 
   <nav>
     <a href="/mvc/public">Inicio</a>
-    <a href="/mvc/public/dia1">Día 1</a>
+    <a href="/mvc/public/dia1" class="active">Día 1</a>
     <a href="/mvc/public/dia2">Día 2</a>
     <a href="/mvc/public/dia3">Día 3</a>
     <a href="/mvc/public/dia4">Día 4</a>
@@ -24,7 +24,7 @@
     <a href="/mvc/public/visitas">Registrar visita</a>
   </nav>
 
-  <h2 class="titulo-dia1">Día 1 - Inauguración y Ponencias y Hackathon</h2>
+  <h2 class="titulo-dia1">Día 1 - Inauguración, Ponencias y Hackatón</h2>
 
   <main>
     <?php foreach ($actividades as $act): ?>
@@ -35,7 +35,6 @@
 
         <h2><?= htmlspecialchars($act["titulo"]) ?></h2>
 
-        
         <?php if ($act["titulo"] === "Primera Ponencia - El ABC DEL BITCOIN"): ?>
           <p>
             Luis Contreras nos presentó la ponencia <strong>“El ABC DEL BITCOIN”</strong>, donde abordó los siguientes temas:<br>
@@ -57,11 +56,28 @@
             <strong>Redes Generativas Antagónicas (GAN):</strong> explicación de su funcionamiento y aplicaciones para generación de imágenes, audio y otros datos sintéticos.<br>
           </p>
 
+        <?php elseif (stripos($act['titulo'], 'Hackaton') !== false): ?>
+          <div class="descripcion-hackaton">
+            <p>En el <strong>Hackatón</strong> participaron cinco equipos, cada uno presentando una propuesta tecnológica innovadora:</p>
+            <ul>
+              <li><strong>Equipo #1:</strong> Proyecto de gestión para una veterinaria, desarrollado con el modelo MVC.</li>
+              <li><strong>Equipo #2:</strong> Sistema para la gestión de congresos y actividades, que ayuda a organizar eventos y recursos académicos.</li>
+              <li><strong>Equipo #3:</strong> Proyecto de entretenimiento: un sistema de Bingo interactivo.</li>
+              <li><strong>Equipo #4:</strong> Programa en consola con C# para una clínica veterinaria (sistema básico funcional).</li>
+              <li><strong>Equipo #5:</strong> Sistema de gestión de evaluaciones.</li>
+            </ul>
+            <h4>Ganadores:</h4>
+            <ol>
+              <li><strong>1er lugar:</strong> Equipo #3 con el proyecto de Bingo.</li>
+              <li><strong>2do lugar:</strong> Equipo #1 con el proyecto MVC para una clínica veterinaria.</li>
+              <li><strong>3er lugar:</strong> Equipo #4 con el programa en consola en C# sobre una clínica veterinaria.</li>
+            </ol>
+          </div>
+
         <?php else: ?>
-          <p><?= htmlspecialchars($act["descripcion"]) ?></p>
+          <p><?= nl2br(htmlspecialchars($act["descripcion"])) ?></p>
         <?php endif; ?>
 
-        
         <?php if (!empty($act["imagenes"])): ?>
           <div class="imagenes-collage">
             <?php foreach ($act["imagenes"] as $img): ?>
@@ -70,7 +86,6 @@
           </div>
         <?php endif; ?>
 
-   
         <?php if (!empty($act["video"])): ?>
           <video src="<?= $act["video"] ?>" controls></video>
         <?php endif; ?>
@@ -78,9 +93,10 @@
       </section>
     <?php endforeach; ?>
   </main>
+
   <footer>
     <p>© 2025 Semana de Sistemas. Todos los derechos reservados.</p>
   </footer>
-
 </body>
 </html>
+

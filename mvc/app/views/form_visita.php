@@ -5,6 +5,7 @@
   <title>Registrar visita</title>
   <link rel="stylesheet" href="/mvc/public/css/form_visita.css">
   <link rel="stylesheet" href="/mvc/public/css/style.css">
+  <link rel="stylesheet" href="/mvc/public/css/dia4.css">
 
   
 <body>
